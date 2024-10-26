@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { FaLock, FaSpinner, FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
 import Link from "next/link";
-import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/home/Navbar";
 import ToastMessage from "@/components/ui/ToastMessage";
 
 interface Toast {
