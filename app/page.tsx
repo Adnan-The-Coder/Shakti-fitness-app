@@ -1,15 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react';
-import Banner from "@/components/Banner";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import { Navbar } from "@/components/Navbar";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import ExtraServices from '@/components/ExtraServices';
+import Hero from "@/components//home/Hero";
+import { Navbar } from "@/components/home/Navbar";
 import Image from 'next/image';
-import Plans from '@/components/Plans';
 
 const BackToTop = () => {
   const [visible, setVisible] = useState(false);
@@ -52,12 +46,6 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <Banner />
-      <About />
-      <Services />
-      <ExtraServices/>
-      <Plans/>
-      <Footer />
       <BackToTop />
     </>
   );
