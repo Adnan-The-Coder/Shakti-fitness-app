@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Hero from "@/components//home/Hero";
 import { Navbar } from "@/components/home/Navbar";
 import Image from 'next/image';
+import Banner from '@/components/home/Banner';
 
 const BackToTop = () => {
   const [visible, setVisible] = useState(false);
@@ -46,6 +47,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
+      <Banner/>
       <BackToTop />
     </>
   );
