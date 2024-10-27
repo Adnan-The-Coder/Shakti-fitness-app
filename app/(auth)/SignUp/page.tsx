@@ -53,7 +53,7 @@ const Page: React.FC = () => {
         try {
           const response = await axios.post("/api/users/Login", user);
           console.log(response);
-          router.push('/verifyemail');
+          router.push('/Dashboard');
         } catch (error: any) {
           console.log("Login Failed ", error.message);
           addToast(error.message, 'error');
