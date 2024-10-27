@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import diet from '/Users/NAZISH AHMED/Shakti-fitness-app/public/images/diet.png'
+import diet from '@/images/diet.png'
 
 const Services = () => {
   return (

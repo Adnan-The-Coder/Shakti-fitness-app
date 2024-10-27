@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import meal from '/Users/NAZISH AHMED/Shakti-fitness-app/public/images/meal.png';
-import fitness from '/Users/NAZISH AHMED/Shakti-fitness-app/public/images/fitness.jpg';
-import virtual from '/Users/NAZISH AHMED/Shakti-fitness-app/public/images/virtual.jpg';
+import meal from '@/images/meal.png';
+import fitness from '@/images/fitness.jpg';
+import virtual from '@/images/virtual.jpg';
 
 const ExtraServices: React.FC = () => {
   const [open, setOpen] = useState<number | null>(null);

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import main from '/Users/NAZISH AHMED/Shakti-fitness-app/public/images/main.png'
+import main from '@/images/main.png'
 
 const Hero: React.FC = () => {
   const funFacts = [
@@ -41,7 +41,6 @@ const Hero: React.FC = () => {
             start smart
           </h1>
         </div>
-
         <div className='flex flex-col lg:flex-row items-center justify-center gap-2 relative bottom-8 lg:bottom-16 mb-10 lg:mb-20 mt-5'>
           <div className='flex flex-col gap-10 items-center lg:items-start'>
             <p className='text-center lg:text-left text-sm sm:text-base'>
@@ -51,7 +50,6 @@ const Hero: React.FC = () => {
               <img src="https://img.icons8.com/?size=100&id=W9CkRVadJo-2&format=png&color=FFFFFF" alt="" className='w-5 sm:w-7' />
               <p className='text-white text-xs sm:text-sm'>Join now</p>
             </Link>
-
             <div className='hidden bg-white rounded-3xl p-3 sm:p-5 gap-4 lg:flex flex-col h-[150px]'>
               <div className='flex flex-row items-center gap-2'>
                 <img src="https://img.icons8.com/?size=100&id=NfcQrhEa0f4c&format=png&color=000000" className='w-5 sm:w-7' alt="" />
