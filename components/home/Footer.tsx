@@ -3,6 +3,7 @@ import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
+import shakti from '@/images/shakti.png'
 
 const footerVariants = {
   initial: { opacity: 0 },
@@ -21,7 +22,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div className="w-full md:w-1/4">
             <div className='flex gap-2 pb-2'>
-              <Image src='/images/shakti.png' alt="logo" width={45} height={45}/>
+              <Image src={shakti} alt="logo" width={45} height={45}/>
               <Link href="/" className='text-[#fe4f2a] text-2xl font-semibold'>Shakti.io</Link>
             </div>
             <p className="text-md md:text-md">Your fitness journey made smarter and simpler.</p>
