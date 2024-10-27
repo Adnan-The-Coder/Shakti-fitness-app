@@ -11,6 +11,7 @@ import { useEffect } from 'react';
 import Workout from '@/components/DashboardContents/Workout';
 import Learning from '@/components/DashboardContents/Learning';
 import Meals from '@/components/DashboardContents/Meals';
+import AI_Assitant from '@/components/DashboardContents/AIAssistant';
 
 interface SidebarProps {
   setSelectedSection: (section: string) => void;
@@ -160,7 +161,7 @@ const Dashboard = () => {
       case 'workout-plan':
         return <Workout/>
       case 'health-assistant':
-        return <div>Health Assistant Content</div>;
+        return <AI_Assitant/>
       case 'meal-plans':
         return <Meals/>
       case 'community-support':
