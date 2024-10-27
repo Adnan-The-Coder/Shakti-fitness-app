@@ -12,6 +12,7 @@ import Workout from '@/components/DashboardContents/Workout';
 import Learning from '@/components/DashboardContents/Learning';
 import Meals from '@/components/DashboardContents/Meals';
 import AI_Assitant from '@/components/DashboardContents/AIAssistant';
+import VirtualMeetBookings from '@/components/DashboardContents/VirtualMeetBookings';
 
 interface SidebarProps {
   setSelectedSection: (section: string) => void;
@@ -169,7 +170,7 @@ const Dashboard = () => {
       case 'learning-hub':
         return <Learning/>
       case 'virtual-consultations':
-        return <div>Virtual Consultations Content</div>;
+        return <VirtualMeetBookings/>
       case 'announcement':
         return <div>Announcement Content</div>;
       default:
