@@ -99,7 +99,7 @@ const ProfileContent = () => {
                     <h3 className="text-xl font-semibold">{data?.username || 'Add your info'}</h3>
                     <p className="text-gray-600">{data?.email || 'Add your info'}</p>
                     <p className="text-gray-600">{data?.isVerified ? "Verified" : "Not Verified"}</p>
-                    <button className="mt-4 bg-orange-500 text-white py-2 px-4 rounded" onClick={handleEditToggle}>
+                    <button className="mt-4 bg-[#ff4f2b] text-white py-2 px-4 rounded" onClick={handleEditToggle}>
                         {isEditing ? "Cancel" : "Edit Profile"}
                     </button>
                 </div>

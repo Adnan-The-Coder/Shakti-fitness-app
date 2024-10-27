@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import diet from '/Users/NAZISH AHMED/Shakti-fitness-app/public/images/diet.png'
 
 const Services = () => {
   return (
@@ -11,10 +12,8 @@ const Services = () => {
             <div className='flex flex-row pl-5 pr-5 xl:pl-20 xl:pr-20'>
                 <div className='overflow-hidden rounded-3xl'>
                 <Image
-                    src='/images/diet.png'
+                    src={diet}
                     alt="diet"
-                    width={40}
-                    height={50}
                     className="h-[30rem] w-[40rem] rounded-3xl hidden xl:flex transition-transform duration-300 transform hover:scale-110 object-cover"
                 />
                 </div>

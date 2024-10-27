@@ -11,6 +11,7 @@ import Learning from '@/components/DashboardContents/Learning';
 import Meals from '@/components/DashboardContents/Meals';
 import AI_Assitant from '@/components/DashboardContents/AIAssistant';
 import VirtualMeetBookings from '@/components/DashboardContents/VirtualMeetBookings';
+import Link from 'next/link';
 
 interface SidebarProps {
   selectedSection: string; // Add selectedSection prop
@@ -75,7 +76,9 @@ const Sidebar: React.FC<SidebarProps> = ({ selectedSection, setSelectedSection, 
   return (
     <aside className={`fixed h-screen inset-0 bg-gray-100 p-5 flex flex-col transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'} z-50 md:static md:translate-x-0 md:w-64`}>
       <div className="flex justify-between items-center mb-8">
-        <div className="text-2xl font-bold">Shakti.io</div>
+        <div className="text-[#ff4f2b] text-2xl font-bold">
+          <Link href="/">Shakti.io</Link>          
+          </div>
         <button onClick={toggleMenu}>
           <FaTimes size={24} className="text-gray-700 md:hidden" />
         </button>
@@ -86,17 +89,17 @@ const Sidebar: React.FC<SidebarProps> = ({ selectedSection, setSelectedSection, 
             { section: 'dashboard', icon: <FaChartLine />, label: 'Dashboard' },
             { section: 'profile', icon: <FaUser />, label: 'Profile' },
             { section: 'workout-plan', icon: <FaDumbbell />, label: 'Workout Plan' },
-            { section: 'health-assistant', icon: <FaHeartbeat />, label: 'Personal Health Assistant' },
+            { section: 'health-assistant', icon: <FaHeartbeat />, label: 'Health Assistant' },
             { section: 'meal-plans', icon: <FaUtensils />, label: 'Meal Plans' },
             { section: 'community-support', icon: <FaComments />, label: 'Community Support' },
             { section: 'learning-hub', icon: <FaBook />, label: 'Learning Hub' },
             { section: 'virtual-consultations', icon: <FaVideo />, label: 'Virtual Consultations' },
-            { section: 'announcement', icon: <FaBullhorn />, label: 'Announcement Avenue' },
+            { section: 'announcement', icon: <FaBullhorn />, label: 'Announcement' },
           ].map(({ section, icon, label }) => (
             <li key={section}>
               <button 
                 onClick={() => setSelectedSection(section)} 
-                className={`flex items-center space-x-2 ${selectedSection === section ? 'text-orange-500 font-semibold' : 'text-gray-700 hover:text-orange-500'}`}
+                className={`flex items-center space-x-2 ${selectedSection === section ? 'text-[#ff4f2b] font-semibold' : 'text-gray-700 hover:text-[#ff4f2b]'}`}
               >
                 {icon} <span>{label}</span>
               </button>
@@ -105,8 +108,8 @@ const Sidebar: React.FC<SidebarProps> = ({ selectedSection, setSelectedSection, 
         </ul>
       </nav>
       <div className="mt-6 space-y-3">
-        <button className="bg-orange-500 text-white py-2 px-4 w-full rounded">Settings</button>
-        <button className="bg-orange-500 text-white py-2 px-4 w-full rounded" onClick={logout}>Log Out</button>
+        <button className="bg-[#ff4f2b] text-white py-2 px-4 w-full rounded">Settings</button>
+        <button className="bg-[#ff4f2b] text-white py-2 px-4 w-full rounded" onClick={logout}>Log Out</button>
       </div>
     </aside>
   );

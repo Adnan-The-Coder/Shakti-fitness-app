@@ -5,7 +5,7 @@ const Workout = () => {
   return (
     <div className="w-full h-full p-4 lg:p-8 bg-white">
       {/* Main Heading */}
-      <h1 className="text-3xl font-bold text-center mb-8">Workout</h1>
+      <h1 className="text-3xl font-bold text-center mb-8 text-[#ff4f2b]">Workout</h1>
 
       {/* Main Content Section - Flex Layout */}
       <div className="flex flex-col lg:flex-row w-full">
@@ -22,7 +22,7 @@ const Workout = () => {
                 <div className="text-3xl">🤖</div>
                 <div>
                   <h3 className="text-lg font-semibold">Virtual AI Trainer</h3>
-                  <p className="text-sm text-gray-500">Your personal AI to guide your workouts</p>
+                  <p className="hidden md:block text-sm text-gray-500">Your personal AI to guide your workouts</p>
                 </div>
               </div>
               {/* Button to Initiate AI Trainer */}

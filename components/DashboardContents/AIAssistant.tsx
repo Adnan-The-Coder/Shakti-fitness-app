@@ -49,15 +49,20 @@ export default function AI_Assistant() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-6 bg-gray-100">
+    <main className="flex min-h-screen flex-col items-center justify-between p-4 sm:p-6 md:p-8 bg-gray-100">
       <div className="text-center mb-4">
-        <h1 className="text-3xl font-bold text-orange-600">Shakti AI Assistant</h1>
-        <p className="text-sm text-gray-500">Powered by Gemini</p>
+        <h1 className="text-2xl sm:text-3xl font-bold text-orange-600">Shakti AI Assistant</h1>
+        <p className="text-xs sm:text-sm text-gray-500">Powered by Gemini</p>
       </div>
-      <div className="z-10 max-w-xl w-full bg-white shadow-lg rounded-lg overflow-hidden">
-        <div className="flex flex-col p-4 space-y-4">
+      <div className="z-10 max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl w-full bg-white shadow-lg rounded-lg overflow-hidden">
+        <div className="flex flex-col p-4 space-y-4 h-80 sm:h-96 overflow-y-auto">
           {messages.map((msg, index) => (
-            <div key={index} className={`p-3 rounded-lg ${msg.sender === 'user' ? 'bg-orange-500 text-white self-end' : 'bg-gray-300 text-black self-start'}`}>
+            <div
+              key={index}
+              className={`p-3 rounded-lg max-w-[80%] ${
+                msg.sender === 'user' ? 'bg-orange-500 text-white self-end' : 'bg-gray-300 text-black self-start'
+              }`}
+            >
               {msg.text}
             </div>
           ))}
@@ -68,9 +73,12 @@ export default function AI_Assistant() {
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
             placeholder="Type your message..."
-            className="flex-grow p-4 border-none outline-none"
+            className="flex-grow p-3 sm:p-4 border-none outline-none text-sm sm:text-base"
           />
-          <button type="submit" className="p-4 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition">
+          <button
+            type="submit"
+            className="p-3 sm:p-4 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition"
+          >
             Send
           </button>
         </form>

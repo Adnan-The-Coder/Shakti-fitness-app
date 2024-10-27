@@ -154,7 +154,7 @@ const Meals = () => {
   ];
 
   return (
-    <div className="p-4 sm:p-6 bg-gray-100 min-h-screen">
+    <div className=" bg-gray-100 min-h-screen overflow-x-hidden">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-2xl sm:text-3xl font-bold text-center text-orange-600 mb-4">Choose a Diet Plan</h1>
 

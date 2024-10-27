@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import main from '/Users/NAZISH AHMED/Shakti-fitness-app/public/images/main.png'
 
 const Hero: React.FC = () => {
   const funFacts = [
@@ -63,7 +64,7 @@ const Hero: React.FC = () => {
           </div>
 
           <div className='w-full lg:w-auto'>
-            <Image className="w-[300px] sm:w-[400px] md:w-[500px] phoenix" width={300} height={400} src='/images/main.png' alt="main" />
+            <Image className="w-[300px] sm:w-[400px] md:w-[500px] phoenix" src={main} alt="main" />
           </div>
 
           <div className='flex-col gap-y-5 items-center hidden lg:flex lg:items-start'>

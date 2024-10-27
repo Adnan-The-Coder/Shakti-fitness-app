@@ -7,7 +7,7 @@ const DashboardContent = () => {
     <section className="p-6 bg-gray-50 min-h-screen">
       {/* Date Indicator and Search Bar */}
       <div className="flex justify-between items-center mb-8">
-        <div className="text-xl font-bold text-gray-800">Daily Last 8 Days</div>
+        <div className="text-xl font-bold hidden md:flex">Daily Last 8 Days</div>
         <input
           type="text"
           placeholder="Search something..."

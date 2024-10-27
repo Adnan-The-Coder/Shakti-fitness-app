@@ -58,7 +58,7 @@ export function Navbar() {
           <Link href="#about" className="text-gray-600 hover:text-[#fe4f2a] transition-all text-lg">About Us</Link>
           <Link href="#services" className="text-gray-600 hover:text-[#fe4f2a] transition-all text-lg">Services</Link>
           <Link href="#plans" className="text-gray-600 hover:text-[#fe4f2a] transition-all text-lg">Plans</Link>
-          <Link href="/signup" className="bg-[#fe4f2a] text-white px-4 py-2 rounded-full transition-all text-md">
+          <Link href="/SignUp" className="bg-[#fe4f2a] text-white px-4 py-2 rounded-full transition-all text-md">
             Sign Up
           </Link>
         </div>

@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import meal from '/Users/NAZISH AHMED/Shakti-fitness-app/public/images/meal.png';
+import fitness from '/Users/NAZISH AHMED/Shakti-fitness-app/public/images/fitness.jpg';
+import virtual from '/Users/NAZISH AHMED/Shakti-fitness-app/public/images/virtual.jpg';
 
 const ExtraServices: React.FC = () => {
   const [open, setOpen] = useState<number | null>(null);
@@ -9,7 +12,6 @@ const ExtraServices: React.FC = () => {
 
   return (
     <div className="container mx-auto p-5 sm:p-6 md:p-0 lg:p-20 pb-10">
-      {/* Health and Fitness Plan */}
       <div className="border-t border-b py-4">
         <div
           className="flex justify-between items-center cursor-pointer"
@@ -29,10 +31,8 @@ const ExtraServices: React.FC = () => {
         >
           <div className="mt-4 flex flex-col md:flex-row gap-4 bg-white rounded-xl p-4 sm:p-6 md:p-10">
             <div className="pr-0 md:pr-4">
-              <Image
-                src='/images/fitness.jpg'
-                width={40}
-                height={50}
+            <Image
+                src={fitness}
                 alt="Meal Plan"
                 className="w-full md:w-96 max-w-xs mx-auto mb-4 rounded-2xl"
               />
@@ -49,8 +49,6 @@ const ExtraServices: React.FC = () => {
           </div>
         </div>
       </div>
-
-      {/* Efficient Meal Plans */}
       <div className="border-t border-b py-4">
         <div
           className="flex justify-between items-center cursor-pointer"
@@ -71,9 +69,7 @@ const ExtraServices: React.FC = () => {
           <div className="mt-4 flex flex-col md:flex-row gap-4 bg-white rounded-xl p-4 sm:p-6 md:p-10">
             <div className="pr-0 md:pr-4">
               <Image
-                src='/images/meal.png'
-                width={40}
-                height={50}
+                src={meal}
                 alt="Meal Plan"
                 className="w-full md:w-96 max-w-xs mx-auto mb-4 rounded-2xl"
               />
@@ -112,10 +108,8 @@ const ExtraServices: React.FC = () => {
           <div className="mt-4 flex flex-col md:flex-row gap-4 bg-white rounded-xl p-4 sm:p-6 md:p-10">
             <div className="pr-0 md:pr-4">
               <Image
-                src='/images/virtual.jpg'
+                src={virtual}
                 alt="Meal Plan"
-                width={40}
-                height={50}
                 className="w-full md:w-96 max-w-xs mx-auto mb-4 rounded-2xl"
               />
             </div>
