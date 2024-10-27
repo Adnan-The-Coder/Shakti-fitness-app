@@ -8,6 +8,7 @@ import Banner from '@/components/home/Banner';
 import About from '@/components/home/About';
 import Services from '@/components/home/Services';
 import ExtraServices from '@/components/home/ExtraServices';
+import Plans from '@/components/home/Plans';
 
 const BackToTop = () => {
   const [visible, setVisible] = useState(false);
@@ -54,6 +55,7 @@ export default function Home() {
       <About/>
       <Services/>
       <ExtraServices/>
+      <Plans/>
       <BackToTop />
     </>
   );
