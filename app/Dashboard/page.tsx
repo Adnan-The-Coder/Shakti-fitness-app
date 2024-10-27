@@ -9,6 +9,7 @@ import DashboardContent from '@/components/DashboardContents/Dashboard.Content';
 import Profile_content from '@/components/DashboardContents/Profile';
 import { useEffect } from 'react';
 import Workout from '@/components/DashboardContents/Workout';
+import Learning from '@/components/DashboardContents/Learning';
 
 interface SidebarProps {
   setSelectedSection: (section: string) => void;
@@ -164,7 +165,7 @@ const Dashboard = () => {
       case 'community-support':
         return <div>Community Support Content</div>;
       case 'learning-hub':
-        return <div>Learning Hub Content</div>;
+        return <Learning/>
       case 'virtual-consultations':
         return <div>Virtual Consultations Content</div>;
       case 'announcement':
