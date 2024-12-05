@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import shakti from '@/images/shakti.png'
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 

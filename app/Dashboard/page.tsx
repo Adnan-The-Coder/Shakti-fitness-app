@@ -12,6 +12,7 @@ import Meals from '@/components/DashboardContents/Meals';
 import AI_Assitant from '@/components/DashboardContents/AIAssistant';
 import VirtualMeetBookings from '@/components/DashboardContents/VirtualMeetBookings';
 import Link from 'next/link';
+import CommunitySupport from '@/components/DashboardContents/CommunitySupport';
 
 interface SidebarProps {
   selectedSection: string; // Add selectedSection prop
@@ -141,7 +142,7 @@ const Dashboard = () => {
       case 'meal-plans':
         return <Meals />;
       case 'community-support':
-        return <div>Community Support Content</div>;
+        return <CommunitySupport/>;
       case 'learning-hub':
         return <Learning />;
       case 'virtual-consultations':
